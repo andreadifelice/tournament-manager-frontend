@@ -2,13 +2,13 @@
 
 **Repository clone: https://github.com/andreadifelice/tournament-manager-frontend.git**
 
-**Installazione del progetto:** 
-```bash
-npm install
-```
+## Comandi utili
 
-**Inizializzazione del progetto:** 
 ```bash
+# Installa dipendenze: 
+npm install
+
+# Inizializzazione del progetto: 
 npm run dev
 ```
 
