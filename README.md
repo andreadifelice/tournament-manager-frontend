@@ -24,18 +24,18 @@ SoccerBall è una web application progettata per la gestione completa di tornei 
 ```
 src/
 ├── components/             # Componenti riutilizzabili
-|   ├── div/                # Componenti <div>
-|   ├── nav/                # Componenti <nav>
-|   └── ui/                 # Componenti shadcn
+|   ├── div/                
+|   ├── nav/                
+|   └── ui/                 
 ├── context/                # Context per controllo del tema
-├── features/               # Tabelle 
-|   ├── game/               # Gestione partite
-|   ├── team/               # Gestione squadre
-|   ├── tournament/         # Gestione tornei
-|   └── tournament_teams/   # Gestione tornei + squadre
+├── features/               # Gestione CRUD
+|   ├── game/               
+|   ├── team/               
+|   ├── tournament/         
+|   └── tournament_teams/   
 ├── layouts/                # Layout pagine
 ├── lib/                    # Libreria funzioni e metodi
 |   └── utils_schema/       # Utils validazione form
-└── pages/                  # Pagine della web app
+└── pages/                  
 
 ```
