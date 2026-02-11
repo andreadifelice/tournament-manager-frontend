@@ -11,7 +11,7 @@ SoccerBall è una web application progettata per la gestione completa di tornei 
 
 
 ## Tecnologie utilizzate: ##
-- TypeScript**
+- TypeScript
 - Vite
 - React
 
