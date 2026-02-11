@@ -2,6 +2,9 @@
 
 **Repository clone: https://github.com/andreadifelice/tournament-manager-frontend.git**
 
+## Configurazione backend
+rinomina il file `.env.example` in `.env.local`, poi nella variabile d'ambiente `VITE_BACKEND_URL=` inserisci l'host del server che vuoi collegare al frontend (ex: http://localhost:3000) 
+
 ## Comandi utili
 
 ```bash
