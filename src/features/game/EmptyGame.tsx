@@ -12,7 +12,7 @@ const EMPTY_VARIANTS = {
         description: "Tutte le partite sono state completate",
     },
     pending: {
-        icon: <LoaderCircle className="animate-spin" size={48} />,
+        icon: <LoaderCircle className="animate-spin text-gray-500" size={48} />,
         title: "Caricamento delle partite in corso",
         description: "Stiamo recuperando le partite",
     },

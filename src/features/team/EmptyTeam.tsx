@@ -7,11 +7,11 @@ type EmptyTeamProps = {
 
 const EMPTY_VARIANTS = {
     empty: {
-        icon: <BoxIcon size={48} />,
+        icon: <BoxIcon className="text-gray-500" size={48} />,
         title: "Lista delle squadre attualmente vuota",
     },
     pending: {
-        icon: <LoaderCircle className="animate-spin" size={48} />,
+        icon: <LoaderCircle className="animate-spin text-gray-500" size={48} />,
         title: "Caricamento delle squadre in corso",
     },
     error: {
