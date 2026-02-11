@@ -33,7 +33,9 @@ const TournamentCard = ({ status = 'active' }: TournamentCardProps) => {
                                     <ItemDescription>{getStatusLabel(tournament.date)}</ItemDescription>
                                     <ItemDescription>Stato: {getStatusLabel(tournament.status)}</ItemDescription>
                                 </div>
-                                <div className="border-2 shadow-sm shadow-gray-100 rounded-full p-2"><ChevronRight/></div>
+                                <div className="border-2 shadow-sm shadow-gray-100 rounded-full p-2">
+                                    <ChevronRight/>
+                                </div>
                             </div>
                         </ItemContent>
                     </Item>

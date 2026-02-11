@@ -59,7 +59,7 @@ const GameCard = ({ tournamentId, onTournamentComplete }: GameCardProps) => {
                 <>
                     {/* Partite attuali */}
                     {currentRoundGames.length > 0 && (
-                        <div>
+                        <div className="border-t pt-6 mt-6">
                             <h3 className="text-2xl font-semibold mb-4">Round {currentRound}</h3>
                             <ItemGroup className="space-y-3">
                                 {currentRoundGames.map((game) => (
@@ -68,13 +68,6 @@ const GameCard = ({ tournamentId, onTournamentComplete }: GameCardProps) => {
                                             <div className="flex-wrap md:flex space-y-3 justify-between items-center w-full">
                                                 <div className="flex-1 space-y-1 md:m-0">
                                                     <ItemTitle className="text-lg">{getTeamName(game.team_a_id)} vs {getTeamName(game.team_b_id)}</ItemTitle>
-                                                    <ItemDescription>
-                                                        {game.team_a_score !== undefined && game.team_b_score !== undefined && (
-                                                            <div className="text-sm font-semibold text-green-600">
-                                                                Risultato: {game.team_a_score} - {game.team_b_score}
-                                                            </div>
-                                                        )}
-                                                    </ItemDescription>
                                                 </div>
                                                 {!game.team_a_score && !game.team_b_score && (
                                                     <Button
@@ -96,7 +89,7 @@ const GameCard = ({ tournamentId, onTournamentComplete }: GameCardProps) => {
 
                     {/* Bottone con lista per le prossime partite che si mostra solo quando finisce il round */}
                     {showNextRound && readyGamesNextRound.length > 0 && (
-                        <div className="border-t pt-6">
+                        <div className="border-t pt-6 mt-6">
                             <div className="flex items-center justify-between mb-4">
                                 <h3 className="text-lg font-semibold">Partite pronte - Prossimo round</h3>
                                 <Button
@@ -104,7 +97,7 @@ const GameCard = ({ tournamentId, onTournamentComplete }: GameCardProps) => {
                                     disabled={loadingNextRound}
                                     className="flex gap-2"
                                 >
-                                    Procedi al prossimo round
+                                    Prossimo round
                                     {loadingNextRound ? (
                                         <LoaderCircle className="animate-spin" size={18} />
                                     ) : (

@@ -1,73 +1,41 @@
-# React + TypeScript + Vite
+## Progetto: SoccerBall - sistema di gestione tornei di calcio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Repository clone: https://github.com/andreadifelice/tournament-manager-frontend.git
 
-Currently, two official plugins are available:
+# Installazione del progetto: npm install
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Inizializzazione del progetto: npm run dev
 
-## React Compiler
+# 1. Descrizione del progetto:
+SoccerBall è una web application progettata per semplificare la gestione completa di tornei di calcio a eliminazione diretta. L'applicativo non si limita all'archiviazione dei dati, ma implementa una logica di business avanzata in grado di gestire l'intero ciclo di vita di una competizione: dalla creazione delle squadre alla generazione dei round dinamici, fino alla proclamazione del campione.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+## Tecnologie utilizzate:
+**- TypeScript**
+**- Vite**
+**- React**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Librerie usate ##
+**- ShadCn**
+**- Zod**
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# 2. Struttura del progetto:
 ```
+src/
+├── components/             # Componenti riutilizzabili
+|   ├── div/                # Componenti <div>
+|   ├── nav/                # Componenti <nav>
+|   └── ui/                 # Componenti shadcn
+├── context/                # Context per controllo del tema
+├── features/               # Tabelle 
+|   ├── game/               # Gestione partite
+|   ├── team/               # Gestione squadre
+|   ├── tournament/         # Gestione tornei
+|   └── tournament_teams/   # Gestione tornei + squadre
+├── layouts/                # Layout pagine
+├── lib/                    # Libreria funzioni e metodi
+|   └── utils_schema/       # Utils validazione form
+└── pages/                  # Pagine della web app
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```

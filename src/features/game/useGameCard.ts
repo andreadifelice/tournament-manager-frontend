@@ -155,7 +155,7 @@ const useGameCard = ({ tournamentId, onTournamentComplete }: UseGameCardProps) =
             const teamAName = getTeamName(selectedGame.team_a_id)
             const teamBName = getTeamName(selectedGame.team_b_id)
             const winnerTeam = scoreA > scoreB ? teamAName : teamBName
-            const message = `🎉 ${winnerTeam} ha vinto con un punteggio di ${Math.max(scoreA, scoreB)} - ${Math.min(scoreA, scoreB)}!`
+            const message = `${winnerTeam} ha vinto con un punteggio di ${Math.max(scoreA, scoreB)} - ${Math.min(scoreA, scoreB)}!`
             
             // Rimuovi la partita aggiornata dalla lista corrente
             setGames(games.filter(g => g.id !== selectedGame.id))

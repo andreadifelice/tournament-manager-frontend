@@ -12,19 +12,19 @@ type GameWinnerDialogProps = {
 const GameWinnerDialog = ({ open, onOpenChange, winnerName, onClose }: GameWinnerDialogProps) => {
     return (
         <Dialog open={open} onOpenChange={onOpenChange}>
-            <DialogContent>
+            <DialogContent className="max-w-sm rounded-2xl md:max-w-lg">
                 <DialogHeader>
                     <DialogTitle className="flex items-center gap-2">
                         <Trophy className="text-yellow-500" size={24} />
                         Partita completata!
                     </DialogTitle>
                 </DialogHeader>
-                <div className="py-4">
-                    <p className="text-center text-lg font-semibold text-green-600">
+                <div>
+                    <p className="text-start text-lg font-semibold text-green-600">
                         {winnerName}
                     </p>
                 </div>
-                <DialogFooter>
+                <DialogFooter className="block">
                     <Button
                         onClick={() => {
                             onOpenChange(false)
