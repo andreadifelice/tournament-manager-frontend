@@ -2,15 +2,15 @@
 
 **Repository clone: https://github.com/andreadifelice/tournament-manager-frontend.git**
 
-# Installazione del progetto: npm install
+**Installazione del progetto: npm install**
 
-# Inizializzazione del progetto: npm run dev
+**Inizializzazione del progetto: npm run dev**
 
 # 1. Descrizione del progetto:
 SoccerBall è una web application progettata per semplificare la gestione completa di tornei di calcio a eliminazione diretta. L'applicativo non si limita all'archiviazione dei dati, ma implementa una logica di business avanzata in grado di gestire l'intero ciclo di vita di una competizione: dalla creazione delle squadre alla generazione dei round dinamici, fino alla proclamazione del campione.
 
 
-## Tecnologie utilizzate:
+## Tecnologie utilizzate: ##
 **- TypeScript**
 **- Vite**
 **- React**
