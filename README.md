@@ -1,6 +1,6 @@
 # Progetto: SoccerBall - sistema di gestione tornei di calcio
 
-# Repository clone: https://github.com/andreadifelice/tournament-manager-frontend.git
+**Repository clone: https://github.com/andreadifelice/tournament-manager-frontend.git**
 
 # Installazione del progetto: npm install
 
