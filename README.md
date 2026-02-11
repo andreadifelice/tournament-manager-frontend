@@ -4,12 +4,12 @@
 
 **Installazione del progetto:** 
 ```bash
-    npm install
+npm install
 ```
 
 **Inizializzazione del progetto:** 
 ```bash
-    npm run dev
+npm run dev
 ```
 
 # 1. Descrizione del progetto:
