@@ -12,21 +12,21 @@ npm install
 npm run dev
 ```
 
-# 1. Descrizione del progetto:
+## 1. Descrizione del progetto:
 SoccerBall è una web application progettata per la gestione completa di tornei di calcio a eliminazione diretta. L'applicativo non si limita all'archiviazione dei dati, ma implementa una logica di business avanzata in grado di gestire l'intero ciclo di vita di una competizione: dalla creazione delle squadre alla generazione dei round dinamici, fino alla proclamazione del campione.
 
 
-## a. Tecnologie utilizzate: ##
+### a. Tecnologie utilizzate: ##
 - TypeScript
 - Vite
 - React
 
-## b. Librerie usate ##
+### b. Librerie usate ##
 - ShadCn
 - Zod
 
 
-# 2. Struttura del progetto:
+## 2. Struttura del progetto:
 ```
 src/
 ├── components/             # Componenti riutilizzabili
