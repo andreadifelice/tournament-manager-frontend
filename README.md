@@ -33,18 +33,79 @@ SoccerBall è una web application progettata per la gestione completa di tornei 
 ```
 src/
 ├── components/             # Componenti riutilizzabili
-|   ├── div/                
-|   ├── nav/                
-|   └── ui/                 
-├── context/                # Context per controllo del tema
-├── features/               # Gestione CRUD
-|   ├── game/               
-|   ├── team/               
-|   ├── tournament/         
-|   └── tournament_teams/   
-├── layouts/                # Layout pagine
+|   ├── div/
+|   |   ├── DivFlex.tsx             
+|   |   ├── DivGrid.tsx             
+|   |   └── DivMax4.tsx             
+|   ├── nav/
+|   |    ├── HamburgerButton.tsx                 
+|   |    ├── NavBar.tsx                 
+|   |    ├── NavMenus.tsx                 
+|   |    └── ThemeButton.tsx                 
+|   ├── ui/ 
+|       ├── button.tsx                 
+|       ├── calendar.tsx                 
+|       ├── card.tsx                 
+|       ├── combobox.tsx                 
+|       ├── dialog.tsx                 
+|       ├── drawer.tsx                 
+|       ├── empty.tsx                 
+|       ├── field.tsx                 
+|       ├── input-group.tsx                 
+|       ├── input.tsx                 
+|       ├── item.tsx                 
+|       ├── label.tsx                 
+|       ├── popover.tsx                 
+|       ├── separator.tsx                 
+|       ├── switch.tsx                 
+|       └── textarea.tsx                 
+├── context/                                # Context per controllo del tema
+|       └── ThemeContext.tsx                 
+├── features/                               # Gestione CRUD
+|   ├── game/
+|   |    ├── EmptyGame.tsx                 
+|   |    ├── game.service.ts                 
+|   |    ├── game.type.ts                 
+|   |    ├── GameCard.tsx                 
+|   |    ├── GameEditForm.tsx                 
+|   |    ├── GameWinnerDialog.tsx                 
+|   |    └── useGameCard.ts                 
+|   |
+|   ├── team/
+|   |    ├── EmptyTeam.tsx                 
+|   |    ├── LinkToTeamButton.tsx                 
+|   |    ├── team.service.ts                 
+|   |    ├── team.type.ts                 
+|   |    ├── TeamCard.tsx                                  
+|   |    ├── TeamForm.tsx                 
+|   |    └── useTeamCard.ts               
+|   ├── tournament/
+|   |    ├── EmptyTournament.tsx                 
+|   |    ├── SelectDate.tsx                 
+|   |    ├── SelectTeams.tsx                 
+|   |    ├── tournament.service.ts                 
+|   |    ├── tournament.type.ts                 
+|   |    ├── TournamentCard.tsx                                  
+|   |    ├── TournamentForm.tsx                 
+|   |    ├── TournamentWinnerDialog.tsx        
+|   |    └── useTournamentCard.ts                 
+|   └── tournament_teams/                    # Layout pagine
+|        ├── tournament_teams.service.ts       
+|        └── tournament_teams.ts   
+├── layouts/                                    
+|        └── MainLayout.tsx               
 ├── lib/                    # Libreria funzioni e metodi
-|   └── utils_schema/       # Utils validazione form
-└── pages/                  
+|   ├── utils_schema/       # Utils validazione form
+|   |    ├── teamSchema.ts       
+|   |    └── tournamentSchema.ts
+|   ├── backend.ts
+|   ├── env.ts
+|   └── utils.ts
+└── pages/
+    ├── GamePage.tsx                    
+    ├── HomePage.tsx                    
+    ├── NotFoundPage.tsx                    
+    ├── TeamPage.tsx                    
+    └── TournamentPage.tsx                    
 
 ```
