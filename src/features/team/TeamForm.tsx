@@ -126,7 +126,7 @@ const TeamForm = () => {
             {error && <div className="text-sm text-red-500">{error}</div>}
             {success && <p className="text-sm text-green-500">{success}</p>}
             <Button type="submit" disabled={isSubmitting} className="w-full md:w-fit">
-                {isSubmitting ? "Creazione..." : "Crea Squadra"}
+                {isSubmitting ? "Creazione..." : "Crea squadra"}
             </Button>
         </form>
     )

@@ -140,7 +140,7 @@ const TournamentForm = () => {
             {error && <p className="text-sm text-red-500">{error}</p>}
             {success && <p className="text-sm text-green-500">{success}</p>}
             <Button type="submit" disabled={isSubmitting} className="w-full md:w-fit">
-                {isSubmitting ? "Creazione..." : "Crea Torneo"}
+                {isSubmitting ? "Creazione..." : "Crea torneo"}
             </Button>
         </form>
     )
