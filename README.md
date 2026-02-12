@@ -42,7 +42,7 @@ src/
 |   |    ├── NavBar.tsx                 
 |   |    ├── NavMenus.tsx                 
 |   |    └── ThemeButton.tsx                 
-|   ├── ui/ 
+|   └── ui/ 
 |       ├── button.tsx                 
 |       ├── calendar.tsx                 
 |       ├── card.tsx                 
